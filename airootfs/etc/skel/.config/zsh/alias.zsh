@@ -15,8 +15,31 @@ else
   alias lsa='ls -lah'
 fi
 
+if command -v git &>/dev/null; then
+  alias gi="git init"
+  alias gs="git status"
+  alias ga="git add"
+  alias gc="git clone"
+  alias gm="git commit -m"
+  alias go="git checkout"
+  alias gph="git push"
+  alias gpl="git pull"
+  alias gplo="git pull origin"
+  alias gpho="git push origin"
+  alias gd="git diff"
+  alias gr="git remote add"
+  alias gro="git remote add origin"
+  alias gl="git log"
+fi
+
 if command -v bat &>/dev/null; then
   alias cat='bat -pp'
+  if [[ ! -d $HOME/.config/bat ]]; then
+    mkdir -p $HOME/.config/bat
+  fi
+  if [[ ! -f $HOME/.config/bat/config ]]; then
+      echo "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/aslingguang/myzsh/HEAD/.config/bat/config)" > $HOME/.config/bat/config
+  fi
 fi
 
 if command -v nvim &>/dev/null; then

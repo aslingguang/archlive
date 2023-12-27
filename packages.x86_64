@@ -180,6 +180,7 @@ make
 mkinitcpio-openswap
 fastfetch
 cloc
+dust
 sd
 bat
 fd
