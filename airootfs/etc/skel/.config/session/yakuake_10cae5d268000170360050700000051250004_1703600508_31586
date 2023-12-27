@@ -1,0 +1,13 @@
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+1280x800 screen: Height=480
+1280x800 screen: Width=640
+1280x800 screen: XPosition=0
+1280x800 screen: YPosition=0
+ClassName=MainWindow
+ObjectName=MainWindow#1
+State=AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Virtual-1=Virtual-1

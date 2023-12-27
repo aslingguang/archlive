@@ -1,0 +1,4 @@
+[INFO  Mon 25 Dec 2023 07:04:45 PM CST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  Mon 25 Dec 2023 07:04:45 PM CST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) {}
+[INFO  Mon 25 Dec 2023 07:04:47 PM CST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  Mon 25 Dec 2023 07:04:47 PM CST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)

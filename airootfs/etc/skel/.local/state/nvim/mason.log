@@ -1,0 +1,30 @@
+[INFO  2023年07月24日 星期一 02时53分00秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) {}
+[INFO  2023年07月24日 星期一 02时53分10秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[INFO  2023年07月24日 星期一 03时19分21秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=java-language-server) {}
+[INFO  2023年07月24日 星期一 03时21分03秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=python-lsp-server) {}
+[INFO  2023年07月24日 星期一 03时21分49秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=python-lsp-server)
+[ERROR 2023年07月24日 星期一 03时21分59秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=java-language-server) error=spawn: bash failed with exit code 1 and signal 0. 
+[INFO  2023年07月24日 星期一 03时22分19秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=java-language-server) {}
+[ERROR 2023年07月24日 星期一 03时23分35秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=java-language-server) error=spawn: git failed with exit code 128 and signal 0. 
+[INFO  2023年07月24日 星期一 03时25分48秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=java-language-server) {}
+[ERROR 2023年07月24日 星期一 03时26分14秒] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=java-language-server) error=spawn: bash failed with exit code 1 and signal 0. 
+[INFO  2023年07月24日 星期一 23时57分20秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  2023年07月24日 星期一 23时57分20秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) {}
+[INFO  2023年07月24日 星期一 23时59分24秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 2023年07月24日 星期一 23时59分25秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error="Installation was aborted."
+[ERROR 2023年07月24日 星期一 23时59分25秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=shfmt) error="Installation was aborted."
+[ERROR 2023年07月24日 星期一 23时59分25秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=stylua) error="Installation was aborted."
+[INFO  2023年07月24日 星期一 23时59分27秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  2023年07月24日 星期一 23时59分27秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) {}
+[INFO  2023年07月24日 星期一 23时59分35秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2023年07月24日 星期一 23时59分45秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  2023年07月24日 星期一 23时59分47秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)
+[ERROR 2023年07月25日 星期二 00时00分01秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error="Installation was aborted."
+[INFO  2023年07月25日 星期二 00时00分02秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 2023年07月25日 星期二 00时00分37秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error="Installation was aborted."
+[INFO  2023年07月25日 星期二 00时00分58秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2023年07月25日 星期二 00时02分47秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=json-lsp)
+[ERROR 2023年12月17日 星期日 14时59分22秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/providers/init.lua:75: Provider "github" "get_latest_release" failed: spawn: wget failed with exit code 4 and signal 0. 
+[ERROR 2023年12月17日 星期日 14时59分22秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/providers/init.lua:75: Provider "github" "get_latest_release" failed: spawn: wget failed with exit code 4 and signal 0. 
+[ERROR 2023年12月17日 星期日 14时59分22秒] ...e/nvim/lazy/mason.nvim/lua/mason-core/providers/init.lua:86: No provider implementation succeeded for github.get_latest_release
+[ERROR 2023年12月17日 星期日 14时59分22秒] ...im/lazy/mason.nvim/lua/mason-registry/sources/github.lua:146: Failed to install registry GitHubRegistrySource(repo=mason-org/mason-registry). "Failed to fetch latest registry version from GitHub API."

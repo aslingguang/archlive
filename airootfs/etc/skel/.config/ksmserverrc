@@ -1,0 +1,19 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10cae5d268000170359973300000010490006
+clientId2=10cae5d268000170359973300000010490007
+count=2
+discardCommand2[$e]=rm,$HOME/.config/session/yakuake_10cae5d268000170359973300000010490007_1703600486_942533
+program1=/usr/lib/DiscoverNotifier
+program2=/usr/bin/yakuake
+restartCommand1=/usr/lib/DiscoverNotifier,-session,10cae5d268000170359973300000010490006_1703600486_942079
+restartCommand2=/usr/bin/yakuake,-session,10cae5d268000170359973300000010490007_1703600486_942533
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=liveuser
+userId2=liveuser

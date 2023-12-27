@@ -1,0 +1,7 @@
+WARN  | main: Removing snippet for_i: Detected deletion of snippet `for_i`, removing it
+WARN  | main: Removing snippet for_i: Detected deletion of snippet `for_i`, removing it
+WARN  | main: Removing snippet namespace: Detected deletion of snippet `namespace`, removing it
+WARN  | main: Removing snippet : Detected deletion of snippet ``, removing it
+WARN  | main: Removing snippet : Detected deletion of snippet ``, removing it
+WARN  | main: Removing snippet : Detected deletion of snippet ``, removing it
+WARN  | main: Removing snippet for_i: Error while updating dependents for snippet for_i due to error ...are/nvim/lazy/LuaSnip/lua/luasnip/nodes/functionNode.lua:47: Refusing to update inside a snippet with invalid extmarks
