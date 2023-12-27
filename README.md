@@ -7,7 +7,7 @@ archlive仅为定制版live cd，进行中文本地化，添加archlinuxcn源，
 git https://github.com/aslingguang/archlive.git
 sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 ```
-生成镜像在 `~/archout`中
+生成镜像在 `~/archout`中,大小约2.4G
 
 ## 效果展示
 |                                            |                                            |
