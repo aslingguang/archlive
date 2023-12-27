@@ -131,4 +131,7 @@ Server = file:///home/lingguang/repo
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 ```
 
+## 参考
+[ArchWiki-archiso](https://wiki.archlinux.org/title/Archiso)
 
+[ArchWiki-Custom_local_repository](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Custom_local_repository)
