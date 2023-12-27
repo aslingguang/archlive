@@ -10,10 +10,10 @@ sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 生成镜像在 `~/archout`中
 
 ## 效果展示
-![image](https://github.com/aslingguang/archlive/assets/154639966/683d604d-3e15-455d-899f-ebc5b0c703ee)
-![image](https://github.com/aslingguang/archlive/assets/154639966/1f6c7258-83e5-4ff7-aa3a-b6e7e8d0d083)
-![image](https://github.com/aslingguang/archlive/assets/154639966/64daeb90-7c70-49f7-9bba-a08e6d27a4d4)
-![image](https://github.com/aslingguang/archlive/assets/154639966/e132b5fb-f63f-49ab-b7df-2f9ba6b52e30)
+![image](https://github.com/aslingguang/archlive/assets/154639966/a97102c0-8c0d-4a20-b0ac-c6c2cd0d70e6)
+![image](https://github.com/aslingguang/archlive/assets/154639966/932a407d-4a8a-4444-8b27-c0bad4712228)
+![image](https://github.com/aslingguang/archlive/assets/154639966/9f03e691-0db4-49c5-8be8-d92a5ff37cca)
+![image](https://github.com/aslingguang/archlive/assets/154639966/080263cd-3a8c-4a4f-8050-a62b7c9f380f)
 
 
 ## 安装的软件
