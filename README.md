@@ -7,11 +7,11 @@ archlive仅为定制版live cd，进行中文本地化，添加archlinuxcn源，
 git https://github.com/aslingguang/archlive.git
 sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 ```
-生成镜像在 `~/archout`中,大小约2.4G
+生成镜像在 `~/archout`中,大小约2.7G
 
-[sourceforge下载](https://sourceforge.net/projects/guang-archlive/files/archlinux-2023.12.27-x86_64.iso/download)
+[sourceforge下载](https://sourceforge.net/projects/guang-archlive/files/)
 
-[123云盘下载](https://www.123pan.com/s/nrpDVv-dUZav.html)
+[123云盘下载](https://www.123pan.com/s/nrpDVv-B6Zav.html)
 
 ## 效果展示
 |                                            |                                            |
