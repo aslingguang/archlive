@@ -1,2 +1,2 @@
-2023/12/26-14:31:13.843 4 Creating DB /home/liveuser/.config/chromium/Default/Local Storage/leveldb since it was missing.
-2023/12/26-14:31:13.851 4 Reusing MANIFEST /home/liveuser/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2023/12/26-14:31:13.843 4 Creating DB $HOME/.config/chromium/Default/Local Storage/leveldb since it was missing.
+2023/12/26-14:31:13.851 4 Reusing MANIFEST $HOME/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001

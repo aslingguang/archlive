@@ -1,2 +1,2 @@
-2023/12/26-14:27:02.237 1ceb Creating DB /home/liveuser/.config/microsoft-edge/Default/Sync Data/LevelDB since it was missing.
-2023/12/26-14:27:02.238 1ceb Reusing MANIFEST /home/liveuser/.config/microsoft-edge/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/12/26-14:27:02.237 1ceb Creating DB $HOME/.config/microsoft-edge/Default/Sync Data/LevelDB since it was missing.
+2023/12/26-14:27:02.238 1ceb Reusing MANIFEST $HOME/.config/microsoft-edge/Default/Sync Data/LevelDB/MANIFEST-000001

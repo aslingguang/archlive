@@ -1,5 +1,9 @@
 updateInfoAdded=true
 
+[ark.upd]
+done=add-hamburgermenu-to-toolbar
+mtime=1701863392
+
 [breezehighcontrasttobreezedark.upd]
 ctime=1703584442
 done=BreezeHighContrastToBreezeDark
@@ -131,6 +135,21 @@ mtime=1701857285
 ctime=1703584442
 done=plasmashell-5.27-use-panel-thickness-in-default-group
 mtime=1702320594
+
+[spectacle_clipboard.upd]
+done=clipboard-settings-change
+mtime=1701857496
+
+[spectacle_newConfig.upd]
+mtime=1701857496
+
+[spectacle_rememberregion.upd]
+done=spectacle-migrate-rememberregion
+mtime=1701857496
+
+[spectacle_shortcuts.upd]
+done=spectacle-migrate-shortcuts
+mtime=1701857496
 
 [style_widgetstyle_default_breeze.upd]
 ctime=1703584442

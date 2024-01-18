@@ -117,7 +117,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-#vim
+vim
 virtualbox-guest-utils-nox
 vpnc
 wezterm-terminfo
@@ -157,7 +157,7 @@ xorg-server
 plasma-desktop
 plasma-pa
 dolphin
-dolphin-plugins
+#dolphin-plugins
 
 # if you want xfce4 
 #xfce4
@@ -200,9 +200,13 @@ axel
 vlc
 chromium
 gvfs-smb
-neovim
+#neovim
 yazi
 ksysguard
+spectacle
+libreoffice-fresh
+libreoffice-fresh-zh-cn
+xclip
 
 fcitx
 fcitx-im
@@ -216,6 +220,7 @@ iproute2
 
 ##### from loacl repo
 
+xnviewmp
 git-delta
 debtap
 sublime-text-4

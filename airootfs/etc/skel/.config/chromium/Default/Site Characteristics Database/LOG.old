@@ -1,2 +1,2 @@
-2023/12/26-14:31:13.836 2244 Creating DB /home/liveuser/.config/chromium/Default/Site Characteristics Database since it was missing.
-2023/12/26-14:31:13.846 2244 Reusing MANIFEST /home/liveuser/.config/chromium/Default/Site Characteristics Database/MANIFEST-000001
+2023/12/26-14:31:13.836 2244 Creating DB $HOME/.config/chromium/Default/Site Characteristics Database since it was missing.
+2023/12/26-14:31:13.846 2244 Reusing MANIFEST $HOME/.config/chromium/Default/Site Characteristics Database/MANIFEST-000001

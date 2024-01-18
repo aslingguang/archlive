@@ -1,2 +1,2 @@
-2023/12/26-14:27:02.254 1d0f Creating DB /home/liveuser/.config/microsoft-edge/Default/EdgeCoupons/coupons_data.db since it was missing.
-2023/12/26-14:27:02.255 1d0f Reusing MANIFEST /home/liveuser/.config/microsoft-edge/Default/EdgeCoupons/coupons_data.db/MANIFEST-000001
+2023/12/26-14:27:02.254 1d0f Creating DB $HOME/.config/microsoft-edge/Default/EdgeCoupons/coupons_data.db since it was missing.
+2023/12/26-14:27:02.255 1d0f Reusing MANIFEST $HOME/.config/microsoft-edge/Default/EdgeCoupons/coupons_data.db/MANIFEST-000001

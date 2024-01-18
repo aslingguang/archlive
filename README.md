@@ -50,7 +50,7 @@ ALCI图形化安装程序，可进行本地图形化安装
 - plasma-desktop: KDE Plasma 桌面环境的核心组件，提供了桌面、面板、菜单等基本桌面功能。
 - plasma-pa: KDE Plasma 音频音量管理器，用于管理系统的音频设备和音量。
 - dolphin: KDE Plasma 桌面环境默认的文件管理器，提供了文件和文件夹的管理功能。
-- dolphin-plugins: Dolphin 文件管理器的插件，用于扩展 Dolphin 的功能，例如添加额外的操作选项或视图模式。
+- #dolphin-plugins: Dolphin 文件管理器的插件，用于扩展 Dolphin 的功能，例如添加额外的操作选项或视图模式。
 - sddm: Simple Desktop Display Manager，一个轻量级的 X11 显示管理器，用于管理用户登录和会话启动。
 - networkmanager: 用于在 Linux 上管理网络连接的守护进程和用户界面工具。
 - network-manager-applet: NetworkManager 的 GNOME 系统托盘 applet，提供了一个可视化的方式来管理网络连接。
@@ -85,6 +85,10 @@ ALCI图形化安装程序，可进行本地图形化安装
 - neovim: Vim 编辑器的改进和扩展版本，提供了更多的功能和插件支持。
 - yazi: 一个用 Rust 编写的终端文件管理器，基于非阻塞异步 I/O。
 - ksysguard: KDE 下的系统监视器，用于监视系统资源的使用情况。
+- spectacle: spectacle 是一个用于截图的程序。
+- libreoffice-fresh: LibreOffice 是一个功能强大的开源办公套件，包括文字处理、电子表格、演示文稿、绘图、数据库等功能，与 Microsoft Office 兼容性良好。libreoffice-fresh 版本提供了最新的特性和改进，适合希望使用最新功能的用户。
+- libreoffice-fresh-zh-cn: libreoffice-fresh的中文包。
+- xclip: xclip 是一个命令行工具，用于在 X 窗口系统中处理剪贴板内容。它允许用户从命令行将数据复制到剪贴板，或者将剪贴板的内容粘贴到命令行中。
 - fcitx: 一个灵活的输入法框架，提供了对多种输入法的支持。
 - fcitx-im: Fcitx 输入法框架的基本输入法组件。
 - fcitx-configtool: Fcitx 输入法框架的配置工具。
@@ -96,6 +100,7 @@ ALCI图形化安装程序，可进行本地图形化安装
 
 ### 来自本地源的软件
 
+- xnviewmp: XnViewMP是一款功能丰富、易于使用的图像工具软件。
 - git-delta: 一个 Git 命令行工具，用于美化和改进 git diff 输出的工具，它提供了语法高亮、行号、漂亮的图形和一些额外的功能来改善 Git diff 的显示。
 - debtap: 一个用于将 Debian 软件包转换为 Arch Linux 软件包的实用工具，它可以帮助 Arch Linux 用户在 AUR 中找到适用于他们系统的软件包。
 - sublime-text-4: 一款流行的跨平台文本编辑器，它具有丰富的插件生态和可定制性，适合开发人员和程序员使用。

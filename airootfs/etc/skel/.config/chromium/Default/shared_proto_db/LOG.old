@@ -1,2 +1,2 @@
-2023/12/26-14:31:14.066 2225 Creating DB /home/liveuser/.config/chromium/Default/shared_proto_db since it was missing.
-2023/12/26-14:31:14.067 2225 Reusing MANIFEST /home/liveuser/.config/chromium/Default/shared_proto_db/MANIFEST-000001
+2023/12/26-14:31:14.066 2225 Creating DB $HOME/.config/chromium/Default/shared_proto_db since it was missing.
+2023/12/26-14:31:14.067 2225 Reusing MANIFEST $HOME/.config/chromium/Default/shared_proto_db/MANIFEST-000001

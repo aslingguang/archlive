@@ -165,9 +165,9 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][130][General]
-extraItems=org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.vault,org.kde.plasma.volume
-knownItems=org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.vault,org.kde.plasma.volume
+extraItems=org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.volume
+knownItems=org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.volume
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/config.tar.gz,0,112cf01c-4dc3-42ff-9aaf-83428ba01745,desktop:/Downloads,0,112cf01c-4dc3-42ff-9aaf-83428ba01745
+screenMapping=desktop:/config.tar.gz,0,112cf01c-4dc3-42ff-9aaf-83428ba01745,desktop:/Downloads,0,112cf01c-4dc3-42ff-9aaf-83428ba01745,desktop:/test,0,112cf01c-4dc3-42ff-9aaf-83428ba01745
