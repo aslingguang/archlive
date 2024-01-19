@@ -9,10 +9,10 @@ fi
 
 github_response_code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 1 https://github.com)
 
-github_mirror_url=https://hub.yzuu.cf
+github_mirror_url="${github_mirror_url:-https://hub.yzuu.cf}"
 
 if [ $github_response_code -ne 200 ]; then
-  git config --global url."https://hub.yzuu.cf/".insteadOf "https://github.com/"
+  git config --global url."${github_mirror_url}".insteadOf "https://github.com"
 fi
 
 if command -v nvim &>/dev/null; then
@@ -70,16 +70,6 @@ SAVEHIST=5000
 # 加载 powerlevel10k 主题
 zinit ice depth=1; zinit load romkatv/powerlevel10k
 
-if command -v fzf &>/dev/null; then
-  zinit ice lucid wait='1'
-  zinit load aslingguang/fzf-tab-source
-fi
-
-#记录访问目录，输z获取,输`z 目录名称`快速跳转(skywind3000/z.lua,rupa/z,zoxide等都不能直接与fzf-tab配合使用 )
-zinit ice lucid wait='1'
-zinit load agkozak/zsh-z
-# zinit load skywind3000/z.lua
-
 # zinit light zsh-users/zsh-completions
 zinit load zsh-users/zsh-autosuggestions
 zinit load zdharma/fast-syntax-highlighting
@@ -87,11 +77,16 @@ zinit load zdharma/fast-syntax-highlighting
 zinit wait lucid atload"zicompinit; zicdreplay" blockf for \
   zsh-users/zsh-completions
 
-
-
-if [ $github_response_code -ne 200 ]; then
-  git config --global --unset-all url."https://hub.yzuu.cf/".insteadOf
+if command -v fzf &>/dev/null; then
+  zinit ice lucid wait='1'
+  zinit load aslingguang/fzf-tab-source
 fi
+
+#记录访问目录，输z获取,输`z 目录名称`快速跳转(skywind3000/z.lua,rupa/z,zoxide等都不能直接与fzf-tab配合使用 )
+zinit ice lucid wait='1' atload"[[ $github_response_code -eq 200 ]] || git config --global --unset-all url."${github_mirror_url}".insteadOf"
+zinit load agkozak/zsh-z
+# zinit load skywind3000/z.lua
+
 
 # source /home/lingguang/all/gitLib/aslingguang/fzf-tab-source/fzf-tab.plugin.zsh
 
@@ -100,7 +95,7 @@ fi
 githubraw_url=https://raw.githubusercontent.com
 githubraw_response_code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 1 https://raw.githubusercontent.com)
 if [ $githubraw_response_code -ne 200 ]; then
-  githubraw_url=https://raw.gitmirror.com
+  githubraw_url="${githubraw_mirror_url:-https://raw.gitmirror.com}"
   # githubraw_url=https://raw.fgit.cf/
 fi
 
@@ -208,7 +203,7 @@ update_config()
     echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/bat/config)" > $HOME/.config/bat/config
   fi
 
-  if command -v aichat &>/dev/null; then
+  if command -v aichat &>/dev/null || [[ -f "$HOME/.config/aichat/aichat" ]]; then
     if [[ ! -d $HOME/.config/aichat ]]; then
       mkdir -p $HOME/.config/aichat
     fi
@@ -284,5 +279,5 @@ remove_config()
   
 }
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
