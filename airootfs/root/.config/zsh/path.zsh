@@ -1,5 +1,5 @@
 # echo 'root' | sudo -S ln -s /mnt/wslg/.X11-unix /tmp/.X11-unix &> /dev/null
-if [[ $(locale 2>/dev/null) == *zh_CN.UTF-8* ]]; then
+if [[ $(locale -a 2>/dev/null) == *zh_CN.utf8* ]]; then
   export LANG="zh_CN.UTF-8"
   export LC_ALL="zh_CN.UTF-8"
 fi   
@@ -48,13 +48,6 @@ if [[ -d "/opt/JetBrains/jetbra/vmoptions" ]]; then
   export IDEA_VM_OPTIONS="/opt/JetBrains/jetbra/vmoptions/idea.vmoptions"
 fi
 # export PATH="$PATH:~/.local/share/gem/ruby/3.0.0/bin"
-
-# tldr清华源
-#export TLDR_SOURCE="https://mirror.tuna.tsinghua.edu.cn/tldr-pages/tldr"
-if command -v tldr &>/dev/null; then  
-  export TLDR_SOURCE_PATHS="$HOME/.tldr_sources"
-fi  
-
 
 [[ ! -d /tmp ]] || export TMPDIR=/tmp
 

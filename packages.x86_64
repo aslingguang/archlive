@@ -143,6 +143,7 @@ archlinuxcn-keyring
 yay
 ventoy-bin
 nekoray
+linux-lily
 
 ##### from official repo
 
@@ -207,6 +208,11 @@ spectacle
 libreoffice-fresh
 libreoffice-fresh-zh-cn
 xclip
+tealdeer
+tig
+github-cli
+plocate
+hyperfine
 
 fcitx
 fcitx-im

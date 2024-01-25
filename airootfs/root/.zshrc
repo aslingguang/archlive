@@ -9,7 +9,9 @@ fi
 
 github_response_code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 1 https://github.com)
 
+github_mirror_url="https://github.moeyy.xyz/https://github.com"
 github_mirror_url="${github_mirror_url:-https://hub.yzuu.cf}"
+
 
 if [ $github_response_code -ne 200 ]; then
   git config --global url."${github_mirror_url}".insteadOf "https://github.com"
@@ -98,7 +100,7 @@ if [ $githubraw_response_code -ne 200 ]; then
   githubraw_url="${githubraw_mirror_url:-https://raw.gitmirror.com}"
   # githubraw_url=https://raw.fgit.cf/
 fi
-
+myzsh=${githubraw_url}/aslingguang/myzsh/HEAD
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # https://raw.githubusercontent.com/aslingguang/myzsh/HEAD/.zshrc
 
@@ -110,23 +112,25 @@ if [[ ! -f $HOME/.gitconfig ]]; then
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.gitconfig)" > $HOME/.gitconfig
 fi
 
-if command -v tldr &>/dev/null; then
-  if [[ ! -f $HOME/.tldr_sources ]]; then
-    echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.tldr_sources)" > $HOME/.tldr_sources
-  fi  
-fi  
+if [[ ! -d $HOME/.config/zsh/script ]]; then
+  mkdir -p $HOME/.config/zsh/script
+fi 
 
-if [[ ! -d $HOME/.config/zsh ]]; then
-  mkdir -p $HOME/.config/zsh
-fi  
-
+# 命令别名
 if [[ ! -f $HOME/.config/zsh/alias.zsh ]]; then  
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/alias.zsh)" > $HOME/.config/zsh/alias.zsh
 fi
 
+# 环境变量
 if [[ ! -f $HOME/.config/zsh/path.zsh ]]; then  
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/path.zsh)" > $HOME/.config/zsh/path.zsh
 fi
+
+if [[ ! -f $HOME/.config/zsh/script/package_installer.sh ]]; then  
+  echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/script/package_installer.sh)" > $HOME/.config/zsh/script/package_installer.sh
+  chmod +x $HOME/.config/zsh/script/package_installer.sh
+fi
+
 
 if command -v bat &>/dev/null; then
   if [[ ! -d $HOME/.config/bat ]]; then
@@ -152,12 +156,11 @@ system_info=$(uname -a)
 # p10k主题
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 
-# 命令别名
-[[ ! -f $HOME/.config/zsh/alias.zsh ]] || source $HOME/.config/zsh/alias.zsh 
-
-# 环境变量
-[[ ! -f $HOME/.config/zsh/path.zsh ]] || source $HOME/.config/zsh/path.zsh 
-
+for zsh_config in $HOME/.config/zsh/*; do
+  if [[ -f $zsh_config ]]; then
+    source $zsh_config
+  fi
+done
 
 # termux 配置
 if [[ $system_info == *Android* ]]; then
@@ -175,6 +178,13 @@ if [[ $system_info == *Android* ]]; then
   if command -v sshd &>/dev/null; then
     sshd
   fi
+
+  if command -v mosh &>/dev/null; then
+    mosh-server &>/dev/null
+  fi
+elif [[ ! -f $HOME/.config/zsh/script/manage_link.sh ]]; then  
+  echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/script/manage_link.sh)" > $HOME/.config/zsh/script/manage_link.sh
+  chmod +x $HOME/.config/zsh/script/manage_link.sh
 fi
 
 
@@ -184,17 +194,15 @@ update_config()
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.p10k.zsh)" > $HOME/.p10k.zsh
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.gitconfig)" > $HOME/.gitconfig
 
-  if command -v tldr &>/dev/null; then
-    if [[ ! -f $HOME/.tldr_sources ]]; then
-      echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.tldr_sources)" > $HOME/.tldr_sources
-    fi  
-  fi  
 
-  if [[ ! -d $HOME/.config/zsh ]]; then
-    mkdir -p $HOME/.config/zsh
+  if [[ ! -d $HOME/.config/zsh/script ]]; then
+    mkdir -p $HOME/.config/zsh/script
   fi  
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/alias.zsh)" > $HOME/.config/zsh/alias.zsh
   echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/path.zsh)" > $HOME/.config/zsh/path.zsh
+  echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/script/package_installer.sh)" > $HOME/.config/zsh/script/package_installer.sh
+  chmod +x $HOME/.config/zsh/script/package_installer.sh
+
   
   if command -v bat &>/dev/null; then
     if [[ ! -d $HOME/.config/bat ]]; then
@@ -216,7 +224,12 @@ update_config()
       mkdir -p $HOME/.termux   
     fi 
     echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.termux/termux.properties)" > $HOME/.termux/termux.properties
+  elif [[ ! -f $HOME/.config/zsh/script/manage_link.sh ]]; then  
+    echo "$(curl --fail --show-error --silent --location ${githubraw_url}/aslingguang/myzsh/HEAD/.config/zsh/script/manage_link.sh)" > $HOME/.config/zsh/script/manage_link.sh
+    chmod +x $HOME/.config/zsh/script/manage_link.sh
   fi
+
+  source "$HOME/.zshrc"
 
 }
 
@@ -228,10 +241,6 @@ remove_config()
 
   if [[ -d $HOME/.config/bat ]]; then
     rm -rf $HOME/.config/bat
-  fi
-
-  if [[ -f $HOME/.tldr_sources ]]; then
-    rm -f $HOME/.tldr_sources
   fi
 
   if [[ -f $HOME/.p10k.zsh ]]; then

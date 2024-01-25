@@ -3,10 +3,12 @@
 archlive仅为定制版live cd，进行中文本地化，添加archlinuxcn源，内置中文输入法，对主题进行定制化，主要采用WihteSur主题，内置ALCI图形化安装程序，可进行本地图形化安装，也可使用archinstall进行在线安装。
 
 构建方法(如果需要安装本地软件，记得把本地源改成自己的，并添加所需要的软件包到本地源中)
+
 ```zsh
 git https://github.com/aslingguang/archlive.git
 sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 ```
+
 生成镜像在 `~/archout`中,大小约2.7G
 
 [sourceforge下载](https://sourceforge.net/projects/guang-archlive/files/)
@@ -14,12 +16,11 @@ sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 [123云盘下载](https://www.123pan.com/s/nrpDVv-B6Zav.html)
 
 ## 效果展示
+
 |                                            |                                            |
 |--------------------------------------------|--------------------------------------------|
 |![image](https://github.com/aslingguang/archlive/assets/154639966/a97102c0-8c0d-4a20-b0ac-c6c2cd0d70e6)|![image](https://github.com/aslingguang/archlive/assets/154639966/932a407d-4a8a-4444-8b27-c0bad4712228)|
 |![image](https://github.com/aslingguang/archlive/assets/154639966/2c6684be-048c-43e4-b94b-406f601d76ca)|![image](https://github.com/aslingguang/archlive/assets/154639966/080263cd-3a8c-4a4f-8050-a62b7c9f380f)|
-
-
 
 ## 安装的软件
 
@@ -29,19 +30,16 @@ sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 
 ALCI图形化安装程序，可进行本地图形化安装
 
-
 - alci-calamares-dev: 一个用于Arch Linux 系统安装的安装器框架
 - alci-calamares-config-dev: ALCI安装器的 Calamares 配置开发包
 
-
 ### 来自archlinuxcn源的软件
-
 
 - archlinuxcn-keyring:  Arch Linux CN 软件源的 GPG 密钥环，用于验证从 Arch Linux CN 软件源安装的软件包的真实性。
 - yay: 一个在 Arch Linux 上的 AUR（Arch User Repository）助手，它简化了从 AUR 安装软件包的过程。
 - ventoy-bin: 一个用于创建可启动 USB 设备的工具，它可以让用户一次性将多个 ISO 文件写入 USB 设备并从中启动。
 - nekoray: 代理工具，几乎支持全部常见协议。
-
+- linux-lily: Linux-lily内核和模块（cjktty, android binder, default bbr, pmadv_ksm）,cjktty用于解决tty中文乱码
 
 ### 来自官方源的软件
 
@@ -96,7 +94,11 @@ ALCI图形化安装程序，可进行本地图形化安装
 - net-tools: 包含了一些传统的网络工具，如 ifconfig、netstat 等。
 - inetutils: 包含了一些标准的网络工具，如 ping、telnet 等。
 - iproute2: 用于配置网络接口、路由表等网络参数的工具集。
-
+- tealdeer: man的替代品，tldr 的一个基于 Rust 的实现,一个用于提供快速上手指南的工具。
+- tig: Tig 是一款命令行下 Git 的可视化工具，可以很方便地在命令行下以交互的方式完成 Git 的各种操作。
+- github-cli: ithub命令行工具,用于与GitHub进行交互和管理。
+- plocate: 它可以快速定位文件和目录，使用索引加速搜索过程，比传统的find和locate命令更快速。
+- hyperfine: 替代time,强大的命令行基准测试工具。支持任意 shell 命令、多次运行的统计分析和结果导出。
 
 ### 来自本地源的软件
 
@@ -111,16 +113,17 @@ ALCI图形化安装程序，可进行本地图形化安装
 - whitesur-gtk-theme-git: 一个提供了 Whitesur 主题的 GTK 主题包，它可以让用户在 GTK 桌面应用程序中使用 Whitesur 主题。
 - whitesur-icon-theme-git: 一个提供了 Whitesur 主题的图标主题包，它可以让用户在桌面环境中使用 Whitesur 风格的图标。
 
-
 ## 构建本地仓库
 
 创建仓库目录
+
 ```zsh
 mkdir ~/repo
 ```
 
 先通过aur助手构建想要的本地软件包(yay、paru、pacseek等)
 如：
+
 ```zsh
 yay -S debtap
 cd ~/.cache/yay/debtap
@@ -132,18 +135,22 @@ repo-add guang.db.tar.gz debtap-3.5.1-1-any.pkg.tar.zst
 ## 添加源
 
 添加本地源到archlive/pacman.conf
+
 ```zsh
 [guang]
 SigLevel = Optional TrustAll
 Server = file:///home/lingguang/repo
 ```
+
 添加archlinuxcn源到archlive/pacman.conf
+
 ```zsh
 [archlinuxcn]
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 ```
 
 ## 参考
+
 [ArchWiki-archiso](https://wiki.archlinux.org/title/Archiso)
 
 [ArchWiki-Custom_local_repository](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Custom_local_repository)
