@@ -143,7 +143,8 @@ archlinuxcn-keyring
 yay
 ventoy-bin
 nekoray
-linux-lily
+paru
+#linux-lily
 
 ##### from official repo
 
@@ -155,14 +156,15 @@ linux-headers
 
 # if you want plasma 
 xorg-server
-plasma-desktop
-plasma-pa
-dolphin
+#plasma-desktop
+#plasma-pa
+#dolphin
 #dolphin-plugins
+#ksysguard
 
 # if you want xfce4 
-#xfce4
-#xfce4-goodies
+xfce4
+xfce4-goodies
 
 sddm
 
@@ -203,16 +205,17 @@ chromium
 gvfs-smb
 #neovim
 yazi
-ksysguard
+
 spectacle
 libreoffice-fresh
 libreoffice-fresh-zh-cn
-xclip
+#xclip
 tealdeer
 tig
 github-cli
 plocate
 hyperfine
+htop
 
 fcitx
 fcitx-im
@@ -230,14 +233,14 @@ xnviewmp
 git-delta
 debtap
 sublime-text-4
-pacseek
+#pacseek
 microsoft-edge-stable-bin
 visual-studio-code-bin
 #kvantum-qt5
-plasma5-themes-whitesur-git
-whitesur-gtk-theme-git
+#plasma5-themes-whitesur-git
+#whitesur-gtk-theme-git
 #whitesur-cursor-theme-git
-whitesur-icon-theme-git
+#whitesur-icon-theme-git
 
 
 ## Drivers for graphical cards

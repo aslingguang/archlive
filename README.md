@@ -6,6 +6,7 @@ archlive仅为定制版live cd，进行中文本地化，添加archlinuxcn源，
 
 ```zsh
 git https://github.com/aslingguang/archlive.git
+git checkout kde # 不同的桌面切换到不同的分支
 sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 ```
 
@@ -37,6 +38,7 @@ ALCI图形化安装程序，可进行本地图形化安装
 
 - archlinuxcn-keyring:  Arch Linux CN 软件源的 GPG 密钥环，用于验证从 Arch Linux CN 软件源安装的软件包的真实性。
 - yay: 一个在 Arch Linux 上的 AUR（Arch User Repository）助手，它简化了从 AUR 安装软件包的过程。
+- paru: 类似yay的 AUR（Arch User Repository）助手。
 - ventoy-bin: 一个用于创建可启动 USB 设备的工具，它可以让用户一次性将多个 ISO 文件写入 USB 设备并从中启动。
 - nekoray: 代理工具，几乎支持全部常见协议。
 - linux-lily: Linux-lily内核和模块（cjktty, android binder, default bbr, pmadv_ksm）,cjktty用于解决tty中文乱码
