@@ -6,7 +6,7 @@ archlive仅为定制版live cd，进行中文本地化，添加archlinuxcn源，
 
 ```zsh
 git https://github.com/aslingguang/archlive.git
-git checkout kde # 不同的桌面切换到不同的分支
+git checkout xfce4 # 不同的桌面切换到不同的分支
 sudo mkarchiso  -v -w ~/archbulid -o ~/archout archlive
 ```
 
@@ -41,16 +41,13 @@ ALCI图形化安装程序，可进行本地图形化安装
 - paru: 类似yay的 AUR（Arch User Repository）助手。
 - ventoy-bin: 一个用于创建可启动 USB 设备的工具，它可以让用户一次性将多个 ISO 文件写入 USB 设备并从中启动。
 - nekoray: 代理工具，几乎支持全部常见协议。
-- linux-lily: Linux-lily内核和模块（cjktty, android binder, default bbr, pmadv_ksm）,cjktty用于解决tty中文乱码
 
 ### 来自官方源的软件
 
+- xfce4: Xfce4 是一个轻量级的桌面环境，旨在提供优秀的性能和快速的用户体验。
+- xfce4-goodies: 一系列的附加组件和插件，为Xfce4桌面环境提供了额外的功能和工具。
 - linux-headers: 包含用于构建内核模块的头文件，通常与系统上安装的内核版本相对应。
 - xorg-server: X.Org 服务器是 X Window System 的服务器端实现，提供了图形用户界面的基本功能。
-- plasma-desktop: KDE Plasma 桌面环境的核心组件，提供了桌面、面板、菜单等基本桌面功能。
-- plasma-pa: KDE Plasma 音频音量管理器，用于管理系统的音频设备和音量。
-- dolphin: KDE Plasma 桌面环境默认的文件管理器，提供了文件和文件夹的管理功能。
-- #dolphin-plugins: Dolphin 文件管理器的插件，用于扩展 Dolphin 的功能，例如添加额外的操作选项或视图模式。
 - sddm: Simple Desktop Display Manager，一个轻量级的 X11 显示管理器，用于管理用户登录和会话启动。
 - networkmanager: 用于在 Linux 上管理网络连接的守护进程和用户界面工具。
 - network-manager-applet: NetworkManager 的 GNOME 系统托盘 applet，提供了一个可视化的方式来管理网络连接。
@@ -82,13 +79,11 @@ ALCI图形化安装程序，可进行本地图形化安装
 - vlc: 跨平台的多媒体播放器，支持播放各种音频和视频格式。
 - chromium: 开源网页浏览器，提供了快速的网页浏览和丰富的扩展支持。
 - gvfs-smb: GNOME 虚拟文件系统的 Samba 插件，用于支持通过 SMB 协议访问网络共享文件夹。
-- neovim: Vim 编辑器的改进和扩展版本，提供了更多的功能和插件支持。
 - yazi: 一个用 Rust 编写的终端文件管理器，基于非阻塞异步 I/O。
-- ksysguard: KDE 下的系统监视器，用于监视系统资源的使用情况。
 - spectacle: spectacle 是一个用于截图的程序。
 - libreoffice-fresh: LibreOffice 是一个功能强大的开源办公套件，包括文字处理、电子表格、演示文稿、绘图、数据库等功能，与 Microsoft Office 兼容性良好。libreoffice-fresh 版本提供了最新的特性和改进，适合希望使用最新功能的用户。
 - libreoffice-fresh-zh-cn: libreoffice-fresh的中文包。
-- xclip: xclip 是一个命令行工具，用于在 X 窗口系统中处理剪贴板内容。它允许用户从命令行将数据复制到剪贴板，或者将剪贴板的内容粘贴到命令行中。
+
 - fcitx: 一个灵活的输入法框架，提供了对多种输入法的支持。
 - fcitx-im: Fcitx 输入法框架的基本输入法组件。
 - fcitx-configtool: Fcitx 输入法框架的配置工具。
@@ -108,12 +103,8 @@ ALCI图形化安装程序，可进行本地图形化安装
 - git-delta: 一个 Git 命令行工具，用于美化和改进 git diff 输出的工具，它提供了语法高亮、行号、漂亮的图形和一些额外的功能来改善 Git diff 的显示。
 - debtap: 一个用于将 Debian 软件包转换为 Arch Linux 软件包的实用工具，它可以帮助 Arch Linux 用户在 AUR 中找到适用于他们系统的软件包。
 - sublime-text-4: 一款流行的跨平台文本编辑器，它具有丰富的插件生态和可定制性，适合开发人员和程序员使用。
-- pacseek: 一个用于在 Arch Linux 软件仓库中搜索软件包的命令行工具，它可以帮助用户快速找到他们需要的软件包。
 - microsoft-edge-stable-bin: 微软推出的基于 Chromium 内核的网页浏览器，这是它的稳定版软件包。
 - visual-studio-code-bin: 一款由 Microsoft 推出的流行的跨平台代码编辑器，它支持大量的编程语言和拥有丰富的插件生态。
-- plasma5-themes-whitesur-git: 一个提供了 Whitesur 主题的 KDE Plasma 5 主题包，它可以让用户在 KDE 桌面环境中使用 Whitesur 主题。
-- whitesur-gtk-theme-git: 一个提供了 Whitesur 主题的 GTK 主题包，它可以让用户在 GTK 桌面应用程序中使用 Whitesur 主题。
-- whitesur-icon-theme-git: 一个提供了 Whitesur 主题的图标主题包，它可以让用户在桌面环境中使用 Whitesur 风格的图标。
 
 ## 构建本地仓库
 

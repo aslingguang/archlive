@@ -114,7 +114,7 @@ if command -v mount.davfs &>/dev/null; then
 fi
 
 if command -v reflector &>/dev/null; then
-  alias update="sudo reflector --verbose --country 'China' -l 200 -p https --sort rate --save /etc/pacman.d/mirrorlist"
+  alias update="sudo reflector --verbose -c China -l 200 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 fi
 
 if command -v git &>/dev/null; then
